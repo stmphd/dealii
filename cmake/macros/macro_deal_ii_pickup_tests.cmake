@@ -278,10 +278,6 @@ Comparison operator \"=\" expected for boolean match.\n"
         ENDIF()
       ENDIF()
 
-      IF(_skip_test)
-        CONTINUE()   # next test
-      ENDIF()
-
       #
       # Process version constraints:
       #
@@ -302,6 +298,10 @@ Comparison operator \"=\" expected for boolean match.\n"
         ENDIF()
       ENDIF()
     ENDFOREACH()
+
+    IF(_skip_test)
+      CONTINUE()
+    ENDIF()
 
     #
     # We've made it all the way to here, which means that we actually
