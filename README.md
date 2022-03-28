@@ -1,4 +1,4 @@
-What is deal.II?
+What is deal.II? tiny change
 ================
 
 deal.II is a C++ program library targeted at the computational solution
